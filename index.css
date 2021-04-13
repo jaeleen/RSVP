@@ -87,6 +87,10 @@ html, body {
       margin: 20px auto 0px auto; 
       float:left;
     }
+    a {
+        color: rgb(228, 220, 220);
+        text-decoration: none;
+    }
     
     button.accept {
       border-radius: 0px 0px 0px 10px;
@@ -104,4 +108,16 @@ html, body {
     
     button:focus {
       outline: 0;
+    }
+
+    /******* Regret.htnml *****/
+    .box {
+        display: flex;
+        justify-content: center;
+        height: 800px;
+    }
+    .box img {
+        padding-top: 100px;
+        width: 500px;
+        height: 500px;
     }
