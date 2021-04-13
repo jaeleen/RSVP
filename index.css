@@ -6,10 +6,10 @@ html, body {
     background-image: url(images/IMG_7823.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center;    
     background-size: cover;
 
-    background-color: #f08a5d;
+    background-color: #1f1d1c;
     font-family: 'Raleway';
     }
     .top {
@@ -22,12 +22,12 @@ html, body {
     .form {
       height: 590px;
       width: 400px;
-      background-color: rgba(255, 255, 255, 0.63);
+      background-color: rgba(255, 255, 255, 0.425);
       margin: 90px auto;
       border-radius: 10px;
-      color: #666;
+      color: rgb(56, 56, 56);
       padding: 0px 0px;
-      box-shadow: 2px 2px 4px rgba(197, 32, 32, 0.25);
+      box-shadow: 2px 2px 4px rgba(112, 26, 26, 0.25);
     }
     
     .info {
@@ -60,7 +60,7 @@ html, body {
     }
     .form label {
         display: inline;
-        color: #666;
+        color: rgb(56, 56, 56);
         padding: 46px;
     }
 
