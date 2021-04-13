@@ -1,3 +1,12 @@
+<?php
+$action = $_GET["action"];
+$myText = $_POST["name"];
+
+if($action = "save") {
+  $targetFolder = "/RSVP/input/mytext.txt";
+  file_put_contents($targetFolder."mytext.txt", $myText);
+}
+?>   
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +35,7 @@
             <h2>90's Vibes</h2>
             <p class="line">________________________________________</p>
         </div>
-        <form action="mailto:jaeleen.pg@gmail.com" method="POST" enctype="text/plain">
+        <form action="?action=save" name="myForm" method="POST">
             <input type="text" name="name" placeholder="Name" required>
             <label for="addOn">Add On</label>
             <select id="gift" name="gift" required>
@@ -35,7 +44,7 @@
                 <option value="snacks">Snacks</option>
                 <option value="none">None</option>
             </select>
-        <button type="submit" class="accept" value="send">Accept</button>
+        <button type="submit" class="accept" value="save">Accept</button>
         <button class="regret">Regret</button>
         </form>
     </div>
